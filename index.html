@@ -1,0 +1,57 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>quiz js</title>
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/stephje/javascript-quiz/main/assets/images/favicon.ico" type="image/x-icon" >
+</head>
+<body>
+  <header>
+   <a id="leaderboard-link">view highscores <i class="fas fa-hand-point-left fa-lag"></i></i></a>
+   <time>time: <span id="time"></span></time>
+  </header>
+  <main>
+   <div id="start-card" class="card">
+  <h2 id="title">coding quiz</h2>
+  <p>try answer in time limit <br><br> incorrect penalize </p>
+  <button id="start-button" class="button">start quiz</button>
+  </div>
+  <div hidden id="question-card" class="button">
+    <h2 id="question-text"></h2>
+    <div id="quiz-options">
+      <button id=option0 class="button option-button"></button>
+      <button id=option1 class="button option-button"></button>
+      <button id=option2 class="button option-button"></button>
+      <button id=option3 class="button option-button"></button>
+    </div>
+
+    <div id=result-div>
+     <hr>
+     <p id="result-text"><p>
+    </div>
+  </div>
+  <div hidden id=score-card class="card">
+   <h2>all done</h2>
+   <p>final score <span id=score>.</span></p>
+   <form class="inline-form" id="submission-form">
+    <label for="initials">enter initials: </label>
+    <input type="text" id="initials">
+    <button id="submit-button" class="button">submit</button>
+   </form>
+  </div>
+  <div hidden id="leaderboard-card" class="card">
+  <h2>highscores</h2>
+  <ol id="highscore-list"></ol>
+  <div class="inline-buttons">
+    <button id="back-button" class="button">go back</button>
+    <button id="clear-button" class="button">clear highscores</button>
+  </div>
+  </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
